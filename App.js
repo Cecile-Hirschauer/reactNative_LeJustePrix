@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View} from 'react-native';
 import Game from "./components/Game";
-
+import Navigation from "./components/Navigation";
 export default function App() {
   return (
     <View style={styles.container}>
@@ -10,7 +10,7 @@ export default function App() {
       <StatusBar style="auto" />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {

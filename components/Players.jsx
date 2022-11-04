@@ -1,13 +1,22 @@
 import React, {useState, useEffect} from "react";
 import {Button, StyleSheet, TextInput, View,} from "react-native";
 
-export default function PlayerRegister() {
-    const [playerUsername, setPlayerUsername] = useState("");
+
+export default function Players() {
+    const [player, setPlayer] = useState({});
+    const [playerName, onChangePlayerName] = useState('');
+
+    const newPlayer = () => {
+        setPlayer({
+
+        })
+    }
     return (
         <View style={styles.content}>
             <TextInput
                 style={styles.input}
-                value={playerUsername}
+                value={playerName}
+                onChangeText={onChangePlayerName}
                 placeholder={'Renseignez votre pseudo'}
                 keyboardType={'default'}
             />
